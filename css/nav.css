@@ -1,0 +1,33 @@
+.nav-list a:hover,
+.nav-list a:focus {
+    background: rgba(31, 111, 235, 0.08);
+    outline: none;
+}
+
+/* toggle (burger) - hidden on wide screens */
+.nav-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    padding: 0.35rem;
+    border-radius: 6px;
+    cursor: pointer;
+    /* padding-right: 3rem; */
+    margin-left: auto;
+}
+
+.nav-toggle:focus {
+    outline: 2px solid rgba(31, 111, 235, 0.25);
+    outline-offset: 2px
+}
+
+svg
+{
+    width: 3rem;
+    height:4rem;
+}
+/* MEDIA QUERY IN mediaquery CSS FILE */
+
+/*  text-align:center;
+        width: 100%;
+         */

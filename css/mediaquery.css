@@ -1,0 +1,245 @@
+/* =========== DESKTOP FIRST =========== */
+/* Desktop styles (default) */
+
+
+h1 {
+    font-size: 2.5rem;
+    /* 40px */
+}
+
+h1 {
+    font-size: clamp(1.875rem, 1.5rem + 2vw, 2.5rem);
+}
+
+/* 30px —— fluid —— 40px */
+
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    /* 32px */
+}
+
+h2 {
+    font-size: clamp(1.625rem, 1.1rem + 1.6vw, 2rem);
+}
+
+/* 26px —— fluid —— 32px */
+
+p {
+
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+p {
+    font-size: clamp(1rem, 0.8rem + 0.5vw, 1.25rem);
+}
+
+/* 16px —— fluid —— 20px */
+
+
+/* =========== SCREEN SIZE BELOW 1024 PX=========== */
+
+@media (max-width: 1024px) {
+
+    /* BURGER MENU */
+    .nav-toggle {
+        /* burger button */
+        display: flex;
+        align-items: center;
+    }
+
+    .styling-header {
+        position: relative;
+
+    }
+
+    .about_artist_txt {
+        padding: 0;
+
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        transform: translateX(100%);
+        background: #fff;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.25rem;
+        border-bottom: 1px solid #e6e6e6;
+        transform-origin: top;
+        box-shadow: 0 8px 24px rgba(20, 20, 30, 0.06);
+        overflow: hidden;
+        transition: all 0.6s ease;
+        z-index: 10;
+        width: 45%;
+
+
+    }
+
+    .nav-list a {
+        padding: 0.75rem 1rem
+    }
+
+    /* when open */
+    nav[aria-expanded="true"] .nav-list {
+        transform: translateX(0);
+    }
+
+    .footer-styling {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+}
+
+/* =========== SCREEN SIZE BELOW 767 PX=========== */
+/* =========== MOBILE =========== */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        /* max-width: 767px; */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+    }
+
+    .flex-display {
+        display: block;
+    }
+
+    .logo {
+        padding: 0;
+        text-align: center;
+    }
+
+    /* hero section */
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+
+    .hero__txt p {
+        font-size: 1rem;
+        padding-inline: 5px;
+    }
+
+    .button-pill-hero {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+
+    /* about artist section  */
+    .about_artist {
+        grid-template-columns: 1fr;
+    }
+
+    .about_artist img {
+        /* height: 100%; */
+        height: auto;
+
+    }
+
+    table {
+        /* max-width: 60%; */
+        margin-inline: auto;
+    }
+
+    /* specifity  */
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+        padding: 0.25rem;
+    }
+
+    tbody tr>th:first-child,
+    thead th:first-child {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .about_artist__figure {
+
+        aspect-ratio: unset;
+    }
+
+}
+
+
+/* ===header media query is in - nav.css=== */
+
+/* mobile styles */
+@media (max-width:500px) {
+
+    .wrapper {
+        /* max-width: 500px; */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+    }
+
+    .hero__txt h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .styling-header {
+        display: grid;
+    }
+
+    /* 
+    .nav-toggle {
+        margin-inline: auto;
+    } */
+
+    table {
+        /* max-width: 37%; */
+        margin-inline: auto;
+
+    }
+
+    #table-form {
+        /* border: 2px solid brown; */
+        border-radius: 0;
+        /* margin-bottom: 4rem; */
+    }
+
+}
+
+@media (max-width:412px) {
+
+    .nav-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .margin-padding {
+        margin: auto;
+        padding: 0.75rem;
+
+    }
+
+    .about_artist_txt h2 {
+        display: block;
+    }
+}

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "inter";
+    /* name of the font to be used */
+    src: url(../font/Inter-VariableFont_opsz\,wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../font/Inter-Italic-VariableFont_opsz\,wght.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FleurDeLeah-Regular";
+    src: url(../font/FleurDeLeah-Regular.ttf);
+    font-style: normal;
+}
+
+html,
+body
+
+/* setting font to whole html */
+/* Ensure consistent font rendering */
+    {
+    font-family: "inter", sans-serif;
+
+}
+
+input,
+textarea,
+button
+
+/* Elements, who does not automatically inerit font from html and body, we assign font here*/
+    {
+
+    font-family: "inter", sans-serif;
+}
+
+h1 {
+    font-family: "FleurDeLeah-Regular", "inter", sans-serif;
+}
+
+/* svg circle color rgb(94, 21, 21); */
+
+:root{
+    --text-sm: clamp(0.846rem, 0.311vi + 0.818rem, 0.917rem);  /* 18rem */
+    --text-base: clamp(1.125rem, 0.4vi + 1.025rem, 1.375rem);  /* 22rem */
+    --text-md: clamp(1.496rem, 0.906vi + 1.28rem, 2.25rem);    /* 36rem */
+    --text-lg: clamp(1.99rem, 1.766vi + 1.55rem, 3.125rem);    /* 50rem */
+    --text-xl: clamp(2.647rem, 3.19vi + 1.849rem, 6.625rem);   /* 74rem */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box ; /* learn border boxing */ 
+}
+
+ .text-sm   /* text-sm--size 18rem */
+ {
+font-size: var(--text-sm);
+ }
+
+.text-base /*text-base--size 22 rem base*/
+{
+font-size: var(--text-base);
+}
+
+.text-md        /*text-md--36rem */
+{
+    font-size: var(--text-md);
+}
+
+.text-lg        /*  text-xl--50rem */
+{
+font-size: var(--text-lg);
+}
+
+
+.text-xl            /* text-xl--74 rem */  
+{
+    font-size: var(--text-xl);
+}
+
+.txt_18_26
+{
+    font-size: clamp(1.125rem, 0.5vw + 1rem, 1.625rem);
+
+}

@@ -1,0 +1,41 @@
+/* it is easier to work with specifity here , it is preffered instead of using class becuase it will take much more */
+#table-form
+{
+    /* border: 2px solid brown; */
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+}
+
+table
+{
+    width: 100%;  /* so that it has the same width as above placed elements and take up the space width wise*/
+   margin-inline: auto;
+   overflow: hidden; 
+    /* to apply border otherwise border nehin aa raha tha */
+}
+          /* specifity  */
+table , th, td
+{
+   
+    border-collapse: collapse;
+    padding: 2rem;
+}
+
+
+
+thead
+{
+border-bottom:1px solid #D3D3D3 ;
+background-color: rgb(190, 85, 85);
+font-size: 1.5rem;
+}
+
+
+
+tbody td{
+    text-align: center;
+}
+tbody tr > th:first-child, thead th:first-child {
+    text-align:left;
+    padding-left: 2.5rem;   
+}

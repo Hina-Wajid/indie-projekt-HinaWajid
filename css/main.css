@@ -1,0 +1,77 @@
+#page-gallery h2 {
+	display: flex;
+	justify-content: center;
+}
+
+#page-gallery .gallery {
+	position: relative;
+	/* width: 600px; */
+	margin: 0 auto;
+}
+
+#page-gallery .gallery .next,
+#page-gallery .gallery .prev {
+	position: absolute;
+	background-color: aliceblue;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%);
+	padding: 6px 16px;
+	font-size: 20px;
+	user-select: none;
+}
+
+#page-gallery .gallery .next {
+	right: 0;
+}
+
+#page-gallery .gallery .prev {
+	left: 0;
+}
+
+#page-gallery .gallery .galler__keyhole {
+	overflow: hidden;
+}
+
+#page-gallery .gallery .gallery__ul {
+	display: flex;
+}
+
+
+#page-gallery .gallery .gallery__ul li {
+	flex: 1 0 100%;
+}
+
+/* 
+1. 	flex-grow: 1 – Elementet vil vokse og optage al ledig plads i flex-containeren 
+	i forhold til andre elementer med en flex-grow-værdi større end 0.
+2. flex-shrink: 0 – Elementet vil ikke krympe, selv hvis der er begrænset plads i containeren.
+3. flex-basis: 100% – Elementet starter med en grundlæggende bredde på 100% af containeren.
+*/
+#page-gallery .gallery .gallery__ul li img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	overflow: hidden;
+	aspect-ratio: 16/9;
+}
+
+/* DOTS */
+.dots-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dots-wrapper li svg {
+	width: 20px;
+}
+
+.dots-wrapper li svg.active circle {
+	fill: brown;
+}
+
+li.active svg circle
+{
+	fill: brown;
+}

@@ -1,0 +1,15 @@
+.footer-styling
+{
+    display: flex;
+   justify-content: space-around;
+}
+
+
+
+/* ------------iv#1 SOME ICONS */
+
+.some-icons img
+{
+    width: 35px;
+    border-radius: 30%;
+}

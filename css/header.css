@@ -1,0 +1,33 @@
+.styling-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: beige; */
+    /* height: 6rem; */
+
+}
+
+.logo {
+    padding-left:2rem ; 
+}
+
+.navigationbar_header
+
+/* //nav that contains ul li menu bar*/
+    {
+
+    /* padding-inline: 2rem;
+    padding-block: 1.25rem; */
+
+    display: flex;
+}
+
+.nav_header_menulist
+
+/* ul li */
+    {
+
+    display: flex;
+    gap: 2rem;
+
+}

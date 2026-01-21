@@ -1,0 +1,147 @@
+:root {
+    --primary-color:brown;
+    --body-bg : hsl( 50 56% 90% )
+  }
+  /*---------------------- form ------------------------*/
+  /* body {
+      background-color: var(--body-bg)
+  } */
+  
+  form {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: 1fr;
+      /* width: calc(100vw - 3rem); */ /* trying to see mobile works without it */
+      max-width: 40rem;
+      /* margin: 2rem auto 0; */
+      margin:0 auto 0;
+      padding: 1.25rem;
+      background-color: hsl(0, 0%, 100%);
+      accent-color: var(--primary-color);
+    }
+  
+    .formheadline {
+      font-size: 0.875rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary-color);
+      margin-block-end: 0.75rem;
+    }
+  
+    .formgroup {
+      display:flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  
+    .inline {
+      flex-direction: row;
+    }
+  
+    .fomgroup label, 
+    .formgroup input, 
+    .formgroup textarea, 
+    .formgroup button {
+      font-family: system-ui, sans-serif;
+    }
+  
+    .formgroup input, .formgroup textarea {
+      padding: 0.5rem;
+      border-radius:0;
+      border: 1px solid gray;
+      font-size: 0.875rem;
+    }
+    .formgroup input[type="checkbox"] {
+      margin-right: 0.5rem;
+      width: 1.25rem;
+    }
+    .formgroup textarea {
+      resize: none;
+      height: 10rem;
+    }
+  
+    .formgroup button {
+      align-self: flex-start;
+      /* padding: 0.5rem 1.25rem; */
+      border: none;
+      padding-inline: 2em;
+      padding-block: 0.5em;
+      border: 1px solid rgb(191, 189, 189);
+      border-radius: 10rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.2ch;  
+    }
+  
+    .formgroup button + button {
+      margin-left: 1rem;
+    }
+  
+    .formgroup button[type="submit"] {
+      background-color: var(--primary-color);
+      color: white;
+        
+    }
+  
+    /* ::after pseudo element on child of :has() only works in firefox 
+       if preceeded by selector with no pseudo-element */
+    .formgroup:has(input:required) label {
+      font-weight: normal;
+    }
+  
+    /* not working in firefox stand-alone -- must be preceeded by above*/
+    .formgroup:has(input:required) label::after {
+      content: " *";
+      color: hsl(0 100% 45%);
+      font-weight: bold;
+    }
+ 
+    /*Indsæt ekstra klasser herunder */
+   .formgroup:has(textarea:required) label::after {
+      content: " *";
+      color: hsl(0 100% 45%);
+      font-weight: bold;
+    }
+
+    .formgroup input:user-invalid ,
+    .formgroup textarea:user-invalid
+    {
+      background-color: hsl(0 100% 25% / 15%);  
+   }
+
+.error
+{
+  color:red;
+}
+.error:empty   /* if state of span is empty display none */
+{
+  display: none;
+}
+    
+ /* .formgroup input[name="newsletter"]
+   {
+    order:-1;
+   } */
+
+
+
+    /*Indsæt ekstra klasser herover */
+  
+   @media (width > 43rem) {
+      form {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+      }
+      .full-w {
+          grid-column: 1 / -1;
+        }    
+   }
+
+   /* 1-----------------------4
+   ----------------------(-1) */
+
+
+
+  
