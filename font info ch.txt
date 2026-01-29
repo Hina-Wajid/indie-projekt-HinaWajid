@@ -1,10 +1,4 @@
-Skip to content
-Chat history
-
-
-You said:
 give best font size for all elements desktop and mobile version website
-ChatGPT said:
 Below are well-tested best-practice font sizes for both desktop and mobile websites. These sizes are based on modern UX standards, accessibility guidelines (WCAG), and typical responsive design behavior.
 
 ✅ Recommended Font Sizes for Websites (Desktop & Mobile)
@@ -127,18 +121,8 @@ Nav: 17px
 
 Buttons: 18–20px
 
-If you want, I can also generate:
-
-📌 CSS variables
-📌 Tailwind config
-📌 Responsive typography scale (clamp() fluid text)
-📌 Complete design system for your website’s typography
-
-Just tell me!
-
-You said:
 can you give answer font using clamp function 
-ChatGPT said:
+
 Absolutely — here are recommended responsive font sizes using clamp() for a modern, scalable typography system that works on all screens (mobile → desktop).
 
 These values are optimized for:
